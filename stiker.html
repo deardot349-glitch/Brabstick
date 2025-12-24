@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вітаємо! | Ваш Бренд</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 500px;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #4b6cb7, #182848);
+            color: white;
+            padding: 30px 20px;
+        }
+        
+        .logo-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: rgba(0, 0, 0, 0.2);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .message-box {
+            background-color: #f8f9fa;
+            border-left: 5px solid #4b6cb7;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        h2 {
+            color: #182848;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+        
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        .instructions {
+            background-color: #eef5ff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        
+        .instructions ol {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            color: white;
+        }
+        
+        .btn-instagram {
+            background-color: #E4405F;
+        }
+        
+        .btn-website {
+            background-color: #4b6cb7;
+        }
+        
+        .btn-other {
+            background-color: #333;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 14px rgba(0, 0, 0, 0.15);
+        }
+        
+        .icon {
+            font-size: 24px;
+        }
+        
+        .footer {
+            padding: 20px;
+            color: #777;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+            background-color: #f9f9f9;
+        }
+        
+        .nfc-badge {
+            display: inline-block;
+            background-color: #182848;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                border-radius: 20px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .btn {
+                padding: 16px;
+                font-size: 16px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-placeholder">
+                <i class="fas fa-tag"></i>
+            </div>
+            <h1>Ласкаво просимо!</h1>
+           <p class="subtitle" style="color: #ffffff;">Ви відсканували NFC-наклейку</p>
+            <div class="nfc-badge">
+                <i class="fas fa-wifi"></i> NFC Тег
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="message-box">
+                <h2>Це ваша цифрова візитка</h2>
+                <p>Цю сторінку відкрито за допомогою сучасної NFC-технології. Клієнти можуть миттєво перейти на ваші онлайн-ресурси, просто торкнувшись смартфоном до наклейки.</p>
+                <p><strong>Тег направляє на:</strong> Головну інформаційну сторінку з посиланнями.</p>
+            </div>
+            
+            <div class="instructions">
+                <h3><i class="fas fa-info-circle"></i> Як це працює?</h3>
+                <ol>
+                    <li>Клієнт торкається смартфоном вашої наклейки з NFC-тегом.</li>
+                    <li>Система автоматично відкриває цю веб-сторінку.</li>
+                    <li>Клієнт обирає потрібне посилання та переходить на ваш ресурс.</li>
+                </ol>
+            </div>
+            
+            <h2 style="color: #182848; margin-bottom: 20px;">Оберіть потрібне посилання:</h2>
+            
+            <div class="links">
+                <!-- ТУТ ВАШ ЛІНК -->
+                <a href="https://www.instagram.com/mikola_24?igsh=MWtzYm52aTIzaW8zMA%3D%3D&utm_source=qr" class="btn btn-instagram" target="_blank">
+                    <i class="fab fa-instagram icon"></i> Наш Instagram
+                </a>
+                
+                <!-- ТУТ ВАШ ЛІНК -->
+                <a href="https://вашсайт.com" class="btn btn-website" target="_blank">
+                    <i class="fas fa-globe icon"></i> Наш веб-сайт
+                </a>
+                
+                <!-- ТУТ ВАШ ЛІНК (опційно) -->
+                <a href="https://facebook.com/username" class="btn btn-other" target="_blank">
+                    <i class="fab fa-facebook icon"></i> Наша Facebook-сторінка
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Ця сторінка відкрита завдяки NFC-наклейці від <strong> BraSticker </strong></p>
+            <p style="margin-top: 5px; font-size: 13px;">Технологія для сучасного бізнесу</p>
+        </div>
+    </div>
+
+    <script>
+        // Простий скрипт для анімації кнопок при завантаженні
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach((btn, index) => {
+                btn.style.opacity = '0';
+                btn.style.transform = 'translateY(10px)';
+                
+                setTimeout(() => {
+                    btn.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    btn.style.opacity = '1';
+                    btn.style.transform = 'translateY(0)';
+                }, 300 + (index * 150));
+            });
+            
+            // Додаємо ефект при наведенні на контейнер
+            const container = document.querySelector('.container');
+            container.style.opacity = '0';
+            container.style.transform = 'scale(0.95)';
+            
+            setTimeout(() => {
+                container.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                container.style.opacity = '1';
+                container.style.transform = 'scale(1)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>
